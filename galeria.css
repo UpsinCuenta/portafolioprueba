@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #252A2E; /* Cambia el color de fondo según tu preferencia */
+  }
+  
+  .container {
+    padding: 20px;
+    text-align: center; /* Centrar el texto en el contenedor */
+  }
+  
+  .gallery-title {
+    color: #fff; /* Color del texto */
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: -10px; /* Reducir el espacio entre las imágenes */
+  }
+  
+  .gallery-item {
+    flex: 0 0 calc(33.33% - 20px); /* Para que haya tres imágenes por fila */
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #252A2E; /* Cambiar el color de fondo de las imágenes */
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Añadir bordes redondeados a las imágenes */
+    background-color: transparent; /* Establecer el fondo de las imágenes como transparente */
+    border: none; /* Eliminar el borde alrededor de las imágenes */
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-item {
+      flex: 0 0 calc(50% - 20px); /* Para que haya dos imágenes por fila en pantallas medianas */
+      margin: 10px; /* Ajustar el margen para evitar espacio adicional */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .gallery-item {
+      flex: 0 0 calc(100% - 20px); /* Para que haya una imagen por fila en pantallas pequeñas */
+      margin: 10px; /* Ajustar el margen para evitar espacio adicional */
+    }
+  }

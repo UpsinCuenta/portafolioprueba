@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="img/descargar.ico">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Sergio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="galeria.html" target="_blank">GALERIA</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto.jpg" alt="">
+            </div>
+            <h1>Sergio Antonio</h1>
+            <h2>Licenciado en administracion de empresas - Experto Excel/Power Bi/Data analytics/Data science/Trainer</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/sergio-antonio-m-a848a621b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://discord.gg/gCnDmY98" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://github.com/Smorenobanda" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Sergio Antonio Moreno Banda.</span> Lic. En administración de Empresas Soy un profesional dedicado a desbloquear el potencial de los datos en la industria alimentaria impulsando el éxito empresarial. Comprometido con la mejora continua y la resolución creativa de problemas a través del análisis de datos. Siempre estoy en busca de oportunidades para aprender y crecer en el campo de la ciencia de datos y el análisis de negocios. Mi enfoque se centra en transformar datos en información valiosa brindando soluciones para la toma de decisiones estratégicas. Además, tengo habilidades en Excel, Power bi, Python y Machine Learning. Actualmente, estoy en el área de Control de Procesos de Producción, analizando tendencias, variaciones en los datos que permitan mejoras en los procesos. Estamos Implementando Power BI con los principales indicadores de producción que permitan tomar decisiones basadas en datos de manera más efectiva. Estamos Mejorando proyectos de análisis de datos que resultaron en mejoras significativas en la eficiencia operativa.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            669 109 5155
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            sergioantonio_hotmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            https://www.linkedin.com/in/sergio-antonio-m-a848a621b/
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Mazatlan, Sinaloa
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Administrador</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        
+                    </div>
+                </div> 
+            </div>
+            <button>
+                Descargar CV <a href="img/cv.pdf" download="Portafolio"><i class="fa-solid fa-download"></i></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Excel</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Power Bi</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL Server</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Power Query</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Licenciatura, Admintracion de empresas</h4>
+                        <span class="casa">Universidad del Desarrollo Profesional</span>
+                        <span class="fecha">Enero del 2012 Mayo del 2015</span>
+                        <p>La Licenciatura en Administración de Empresas de la Universidad del Desarrollo Profesional ofrece una sólida formación en gestión empresarial. Este programa brinda a los estudiantes conocimientos especializados en áreas como finanzas, recursos humanos, marketing, operaciones y estrategia empresarial. Además, se enfoca en el desarrollo de habilidades prácticas y analíticas para la toma de decisiones efectivas en el mundo empresarial. Los graduados están preparados para enfrentar los desafíos del mercado laboral y contribuir al éxito y crecimiento de diversas organizaciones.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Grado en Administración y Dirección de Empresas </h4>
+                        <span class="casa">Universidad del Desarrollo Profesional</span>
+                        <span class="fecha">Enero del 2012 Mayo del 2015</span>
+                        <p>La Universidad del Desarrollo Profesional ofrece el Grado en Administración y Dirección de Empresas, una formación integral que prepara a los estudiantes para liderar y gestionar organizaciones en diversos sectores. Este programa proporciona conocimientos sólidos en áreas como gestión financiera, recursos humanos, marketing, operaciones y estrategia empresarial. Los estudiantes adquieren habilidades prácticas y analíticas clave para tomar decisiones efectivas en un entorno empresarial dinámico y competitivo.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Supervisor de Control de Procesos</h4>
+                        <span class="casa">PINSA CONGELADOS</span>
+                        <span class="fecha">Julio de 2023 - Presente (9 meses)</span>
+                        <p>El Supervisor de Control de Producción en Pinsa Congelados tiene un papel crucial en la supervisión y coordinación de actividades relacionadas con el control de procesos de producción. Encabeza dos equipos: los Auxiliares de Control de Proceso y los Auxiliares Administrativos de Proceso. Sus responsabilidades principales incluyen garantizar la precisión y eficiencia en los reportes de producción, desarrollar indicadores automatizados utilizando herramientas de Microsoft como Excel y Power BI, supervisar la generación de reportes físicos, proporcionar análisis clave para respaldar la toma de decisiones estratégicas, y capacitar al equipo para su desarrollo profesional. Trabaja estrechamente con la gerencia y otros departamentos para identificar oportunidades de mejora y áreas de enfoque prioritario.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Encargado Control De Procesos</h4>
+                        <span class="casa">PINSA CONGELADOS</span>
+                        <span class="fecha">Mayo de 2017 - Septiembre de 2023 (6 años 5 meses)</span>
+                        <p>El Encargado de Control de Procesos de Producción en Pinsa Congelados desempeña un papel crucial liderando y coordinando las actividades del equipo de Auxiliares de Control de Proceso. Su principal responsabilidad es garantizar el correcto reporte de los procesos de producción y mejorar continuamente la calidad de la información generada. Colabora estrechamente con las distintas jefaturas proporcionando informes y análisis clave para la toma de decisiones estratégicas, además de capacitar constantemente a su equipo para asegurar su desarrollo profesional y la eficiencia operativa. Sus responsabilidades principales incluyen supervisar el equipo, garantizar el reporte preciso de los procesos, generar archivos de revisión, elaborar informes para las jefaturas y capacitar al equipo.</p>    
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Auxiliar administrativo</h4>
+                        <span class="casa">PINSA CONGELADOS</span>
+                        <span class="fecha">Mayo de 2015 - Mayo de 2017 (2 años 1 mes)</span>
+                        <p>Como Supervisor de Control de Producción en Pinsa Congelados, lidero dos equipos: los Auxiliares de Control de Proceso y los Auxiliares Administrativos de Proceso. Mi responsabilidad principal es garantizar la precisión y eficiencia en el reporte de los procesos de producción. Utilizo herramientas de Microsoft, como Excel y Power BI, para desarrollar indicadores automatizados que contribuyen a la mejora continua y optimización de los procesos. Además, superviso la generación de reportes físicos, proporciono análisis clave para respaldar decisiones estratégicas y capacito continuamente a mi equipo para su desarrollo profesional.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Certificaciones Principales</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/certificacionexcelpage.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Excel</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/carrera.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Data scienlist</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/analisis.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Fundamentos profesionales del analisis de datos por microsoft</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/datanalytics.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Data analytics</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/fundamentos.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Experto en excel</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/trainer.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Trainer</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenido-seccion">
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/CertificadoDeFinalizacion.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Dotes de liderazgo y gestion de equipos de trabajo</h3>
+                    </div>
+                </div>
+                <div class="contenido-seccion">
+                    <div class="galeria">
+                        <div class="proyecto">
+                            <img src="img/domina.jpg" alt="">
+                            <div class="overlay">
+                                <h3>Domina las habilidades de vida a nivel liderazgo</h3>
+                            </div>
+                        </div>
+                    </section>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form action="https://formsubmit.co/sergio_antoniobanda@hotmail.com" method="POST">
+                    <input type="text" name="name" id="name" placeholder="Tú Nombre">
+                    <input type="text" name="phone" id="phone" placeholder="Número telefónico">
+                    <input type="text" name="email" id="email" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacionc.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Fraccionamiendo. Los laureles
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 6692310980  
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: sergio_antoniobanda@hotmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/sergio-antonio-m-a848a621b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://discord.gg/gCnDmY98" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://github.com/Smorenobanda" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
